@@ -1,0 +1,17 @@
+greeting:
+  developer: "Natha"
+quarkus:
+  package:
+    type: fast-jar
+#  live-reload:
+#    password: "azertyuiop"
+#    url: "http://localhost:8080"
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: postgres
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/poc-quarkus
+  hibernate-orm:
+    database:
+      generation: update

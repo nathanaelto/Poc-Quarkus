@@ -1,0 +1,6 @@
+greeting.developer=Natha
+quarkus.datasource.db-kind=poc-quarkus
+quarkus.datasource.username=postgres
+quarkus.datasource.password=postgres
+quarkus.datasource.jdbc.url=jdbc:postgresql://localhost:5432/poc-quarkus
+quarkus.hibernate-orm.database.generation=drop-and-create

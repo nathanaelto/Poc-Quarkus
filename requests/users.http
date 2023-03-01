@@ -1,0 +1,18 @@
+### Find all users
+GET http://localhost:8080/users
+Content-Type: application/json
+
+
+### Create user
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "Natha",
+    "email": "nto@gmail.com",
+    "password": "123456"
+}
+
+### Find user by id
+GET http://localhost:8080/users/1
+Content-Type: application/json
