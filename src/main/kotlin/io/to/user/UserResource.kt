@@ -40,4 +40,16 @@ class UserResource {
             Response.status(Response.Status.NOT_FOUND).build()
         }
     }
+
+    @DELETE
+    @Path("/{userId}")
+    fun delete(@PathParam("userId") userId: Long): Response {
+        val user = userService.findById(userId)
+        return if (user != null) {
+            userService.delete(user)
+            Response.ok().build()
+        } else {
+            Response.status(Response.Status.NOT_FOUND).build()
+        }
+    }
 }

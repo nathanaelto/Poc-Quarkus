@@ -27,4 +27,12 @@ class UserService {
     fun findById(userId: Long): User? {
         return userRepository.findById(userId)
     }
+
+    fun delete(user: User) {
+        try {
+            userRepository.delete(user)
+        } catch (e: Exception) {
+            throw InternalError("Error deleting user")
+        }
+    }
 }
