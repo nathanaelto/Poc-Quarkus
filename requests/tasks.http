@@ -1,0 +1,17 @@
+### Create task
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+    "content": "Task 1",
+    "status": "TODO",
+    "userId": 1
+}
+
+### Find task by id
+GET http://localhost:8080/tasks/2
+Content-Type: application/json
+
+### Find all tasks by users
+GET http://localhost:8080/tasks/users/1
+Content-Type: application/json
