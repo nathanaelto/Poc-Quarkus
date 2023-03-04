@@ -43,6 +43,7 @@ class TaskResource {
     @Produces(MediaType.APPLICATION_JSON)
     fun create(createTask: CreateTask): Response {
         val task = taskService.create(createTask)
-        return Response.ok(task).build()
+        val uri = "/tasks/${task.id}"
+        return Response.created(java.net.URI(uri)).entity(task).build()
     }
 }

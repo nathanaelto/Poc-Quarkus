@@ -26,7 +26,8 @@ class UserResource {
     @Produces(MediaType.APPLICATION_JSON)
     fun create(@Valid createUser: CreateUser): Response {
         val user = userService.create(createUser)
-        return Response.ok(user).build()
+        val uri = "/users/${user.id}"
+        return Response.created(java.net.URI(uri)).entity(user).build()
     }
 
     @GET
