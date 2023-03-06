@@ -25,11 +25,10 @@ Hot reload is enabled by default.
 * First run docker-compose to start the database and the adminer (pgadmin)
 > PgAdmin is a web-based administration tool for PostgreSQL. It run on port 5050. Access it with this url: http://localhost:5050
 
-``
-````bash
+```bash
 make docker-dev
 # or docker-compose up -d
-````
+```
 
 * Then run the application
 
