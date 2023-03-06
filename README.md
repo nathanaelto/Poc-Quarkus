@@ -39,7 +39,8 @@ make docker-dev
 make dev
 # or ./gradlew quarkusDev 
 ```
-
+> In dev mode, Quarkus automatically rebuilds your application if you modify any of your source files. And you have access to the [Dev UI](https://quarkus.io/guides/dev-ui) on http://localhost:8080/q/dev/.
+ 
 ## How to test with http requests
 In `./requests` folder you can find some requests to test the API.
 
