@@ -14,7 +14,7 @@ class DefaultResourceTest {
             .`when`().get("/welcome")
             .then()
             .statusCode(200)
-            .body(`is`("Welcome to Quarkus Kotlin POC by !"))
+            .body(`is`("Welcome to Quarkus Kotlin POC!"))
     }
 
 }

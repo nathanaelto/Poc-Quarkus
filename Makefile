@@ -1,4 +1,4 @@
-.PHONY: dev docker-dev build
+.PHONY: dev docker-dev build docker-down
 
 dev:
 	@echo "Starting development server..."
@@ -11,3 +11,8 @@ docker-dev:
 build:
 	@echo "Building application..."
 	@./gradlew build
+
+docker-down:
+	@echo "Stopping development container..."
+	@docker-compose down
+
